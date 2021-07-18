@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Amberrr</title>
+</head>
+
+<body class="bodyyy">
+  <h1 style="color:red;text-align:center;">Stationary</h1>
+  <hr>
+  <button type="button" class="secretBtn" onclick="secretFunction()">Congrats if you can see this!</button>
+  <script>
+    function secretFunction() {
+      alert("Sharp Eyes btw!");
+      var ans1 = prompt("Who is amber?");
+      ans1 = ans1.toLowerCase();
+      var surety = confirm("Are You Sure?");
+      if (surety == true) {
+        if (ans1 == "neha") {
+          alert("You can't be it!");
+          alert("Next Question!");
+          var ans2 = prompt("Who is Swarit's favourite music artist?");
+          ans2 = ans2.toLowerCase();
+          if (ans2 == "blackbear") {
+            alert("How did you know?");
+            alert("Last Question!");
+            var ans3 = prompt("What is your favourite colour?");
+            ans3 = ans3.toLowerCase();
+            if (ans3 == "teal") {
+              alert("Hey Sam!");
+              alert("Check this message she sent me!");
+              alert("Copy paste this link");
+              alert("https://cutt.ly/lmC3tzN");
+              alert("Gottem!");
+              }
+              else {
+                alert("You were so close to joining the Secret Service");
+                alert("Try again by refreshing the page, if you'd like to");
+              }
+            } else {
+              alert("Sorry, that is incorrect! ");
+              alert("Perhaps there was a typo in the name!");
+              alert("Refresh the page if you wish to try again!");
+            }
+          } else {
+            alert("You may be correct, but not quite the answer I was looking for!")
+            alert("Seems that you don't qualify for the Secret Service Team!");
+          }
+        } else if (surety == false) {
+          alert("Try again then :D");
+          alert("Refresh the page, and try to find the button again!");
+        }
+      }
+  </script>
+  <style>
+    .bodyyy {
+      background-color: #c5d5cb;
+    }
+
+    .secretBtn {
+      color: #c5d9cd;
+      margin-left: 45.5%;
+      margin-right: 45.5%;
+      text-align: center;
+      margin-top: 10%;
+      border: none;
+      width: 127px;
+      height: 50px;
+      background-color: #c5d9cd;
+      opacity: 0.5;
+    }
+  </style>
+</body>
+
+</html>
